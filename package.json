@@ -1,7 +1,7 @@
 {
   "name": "npm-automation-env",
   "version": "1.0.9",
-  "description": "",
+  "description": "## Установка",
   "main": "index.js",
   "watch": {
     "validate-html": {
@@ -28,12 +28,15 @@
     "watch": "npm-watch",
     "dev-mode": "npm-run-all --parallel server watch",
     "postinstall": "npm i -g live-server html-validate jshint",
-    "webpack": "webpack -p",
-    "build": "npm-run-all validate-html jshint stylelint webpack"
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production"
   },
   "author": "Kalagin Ivan",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.4.2",
@@ -52,7 +55,19 @@
     "terser-webpack-plugin": "^2.3.4",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.3",
     "webpack-md5-hash": "0.0.6"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ITNoobCC/webdev-react-excercises.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ITNoobCC/webdev-react-excercises/issues"
+  },
+  "homepage": "https://github.com/ITNoobCC/webdev-react-excercises#readme"
 }
