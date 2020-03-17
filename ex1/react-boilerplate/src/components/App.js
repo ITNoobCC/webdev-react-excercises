@@ -1,4 +1,5 @@
-class Like extends React.Component {
+import React from "react";
+export default class Like extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
@@ -16,6 +17,6 @@ class Like extends React.Component {
     }
   }
   
-  const domContainer = document.querySelector("#like");
-  ReactDOM.render(React.createElement(Like), domContainer);
+  // const domContainer = document.querySelector("#like");
+  // ReactDOM.render(React.createElement(Like), domContainer);
   
