@@ -2,7 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "D:/webdev-react-excercises/ex1/react-boilerplate/src/index.js",
+  entry: "./react-boilerplate/src/index.js",
   output: {
     path: path.join(__dirname, "/dist"),
     filename: "index-bundle.js"
@@ -22,7 +22,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "D:/webdev-react-excercises/ex1/react-boilerplate/src/index.html"
+      template: "./react-boilerplate/src/index.html"
     })
   ]
 };
